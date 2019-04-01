@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/marina/Developer/GitHub/library-catalogue-system/class.h
+
+/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp
+
+/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp
+class.h
+/Users/marina/Developer/GitHub/library-catalogue-system/class.h
+iostream
+-
+
