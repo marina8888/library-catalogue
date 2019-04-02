@@ -3,4 +3,4 @@ project(cw1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cw2 main.cpp function.cpp class.h)
+add_executable(cw2 class.h main.cpp function.cpp)

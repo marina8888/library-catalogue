@@ -6,8 +6,18 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void m(int c){
+    &c=200;
+};
 
-    return 0;
+int main(){
+    int marina;
+    int* PointerNamemarina;
+    PointerNamemarina=&marina;
+    marina=2;
+m(PointerNamemarina);
+ cout<<PointerNamemarina<<endl;
+
+ return 0;
 }
 
