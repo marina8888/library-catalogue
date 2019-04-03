@@ -17,32 +17,29 @@ public:
     Entry();
     entryBorrowed();
     entryReturned();
-    printDetails();
+    void printDetails();
 }
 
-class Book extends public Entry{
+class Book : public Entry{
 private:
-    string author;
-    string publisher;
-    string edition;
+    string author, publisher, edition;
 public:
-    printDetails();//override
+    Entry(string author, string publisher, string edition); //override
+    void printDetails();//override
 }
 
-class MusicAlbum extends public Entry{
+class MusicAlbum : public Entry{
 private:
-    string artist;
-    string recordLabel;
+    string artist, recordLabel;
 public:
-    printDetails();//override
+    void printDetails();//override
 }
 
-class Film extends public Entry{
+class Film : public Entry{
 private:
-    string director;
-    string language;
+    string director, language;
 public:
-    printDetails();//override
+    void printDetails();//override
 }
 
 
