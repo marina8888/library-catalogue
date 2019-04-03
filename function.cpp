@@ -2,7 +2,7 @@
 // Created by Marina Kovaleva on 2019-04-01.
 //
 
-#include "../class.h"
+#include "class.h"
 
 // Constructors - The default values are specified in the declaration
 Entry::Entry(int x, int y) : x(x), y(y) { }
