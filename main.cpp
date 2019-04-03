@@ -7,16 +7,11 @@
 using namespace std;
 
 void m(int c){
-    &c=200;
+
 };
 
 int main(){
-    int marina;
-    int* PointerNamemarina;
-    PointerNamemarina=&marina;
-    marina=2;
-m(PointerNamemarina);
- cout<<PointerNamemarina<<endl;
+  int marina;
 
  return 0;
 }
