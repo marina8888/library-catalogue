@@ -9,13 +9,14 @@ You should solve the problems independently from other students and submit only 
 
  
 
-a.	Write a C++ class Entry according to the given diagram. Derive from it three subclasses: MusicAlbum, Book and Film. The class Entry should have member variables to store the name of the item and if it is borrowed and by who. The subclasses should have additional data members as specified in the diagram. Include member function declarations into your four class definitions according to the diagram. In addition, include two constructor declarations for each of the subclasses: one constructor with parameters for passing the values of all data members and another constructor with no parameters, but which allows the user to enter the values for all data members interactively. Use virtual functions appropriately.	 				                   		
-b.	Write definitions of all member functions for classes Entry and Film. The functions printDetails() should display the values of their class data members.	  	       							
+2.	Write a C++ class Entry according to the given diagram. Derive from it three subclasses: MusicAlbum, Book and Film. The class Entry should have member variables to store the name of the item and if it is borrowed and by who. The subclasses should have additional data members as specified in the diagram. Include member function declarations into your four class definitions according to the diagram. In addition, include two constructor declarations for each of the subclasses: one constructor with parameters for passing the values of all data members and another constructor with no parameters, but which allows the user to enter the values for all data members interactively. Use virtual functions appropriately.	 				                   		
+3.	Write definitions of all member functions for classes Entry and Film. The functions printDetails() should display the values of their class data members.	  	       							
 
-c.	Expand your classes with useful extra data members and functionality.										
-d.	Write a C++ program, which will use the above classes. Use as many of the C++ and C++ Standard Library features as you can.		
+4.	Expand your classes with useful extra data members and functionality.					
+					
+5.	Write a C++ program, which will use the above classes. Use as many of the C++ and C++ Standard Library features as you can.		
 
-e.	Provide documentation for your program (limited to 4 pages including screen shots). Include a short description of the problem-solving phase and the implementation of your program, as well as an account of its limitations and possible improvements. In addition, as part of the documentation, provide evidence of testing. You must supply and explain the choice of values, which you used to test your program and the answers, which the program gave. You should also document any particular cases for which your program fails, or better add code to your program to make sure that they do not occur.
+6.	Provide documentation for your program (limited to 4 pages including screen shots). Include a short description of the problem-solving phase and the implementation of your program, as well as an account of its limitations and possible improvements. In addition, as part of the documentation, provide evidence of testing. You must supply and explain the choice of values, which you used to test your program and the answers, which the program gave. You should also document any particular cases for which your program fails, or better add code to your program to make sure that they do not occur.
 
 # Marking scheme
 
