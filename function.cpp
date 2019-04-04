@@ -5,18 +5,16 @@
 #include "class.h"
 
 // Constructors - The default values are specified in the declaration
-Entry::Entry(int x, int y) : x(x), y(y) { }
+Entry::Entry(string BorrowedBy, string BorrowedBy,) : BorrowedBy(none), name(none) year(none) { }
 
 //Destructors
 Entry::~Entry();
 
 // Getters
-int Entry::getX() const { return x; }
-int Entry::getY() const { return y; }
+int Entry::getEntry() const { return x; }
 
 // Setters
-void Entry::setX(int x) { this->x = x; }
-void Entry::setY(int y) { this->y = y; }
+void Entry::setEntry(int x) { this->x = x; }
 
 // Public Functions
 //setters and getters

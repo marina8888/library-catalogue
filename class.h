@@ -13,6 +13,9 @@ private:
     string BorrowedBy;
     string name;
     string year;
+protected:
+    getEntry();
+    setEntry();
 public:
     Entry();
     entryBorrowed();
