@@ -7,8 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/marina/Developer/GitHub/library-catalogue-system/class.h
+iostream
+-
 
-/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp
+/Users/marina/Developer/GitHub/library-catalogue-system/function.cpp
 class.h
 /Users/marina/Developer/GitHub/library-catalogue-system/class.h
 iostream

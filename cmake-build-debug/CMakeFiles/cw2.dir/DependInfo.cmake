@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw2.dir/function.cpp.o"
+  "/Users/marina/Developer/GitHub/library-catalogue-system/function.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw2.dir/function.cpp.o"
   "/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

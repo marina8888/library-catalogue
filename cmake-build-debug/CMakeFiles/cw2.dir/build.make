@@ -71,17 +71,17 @@ CMakeFiles/cw2.dir/main.cpp.s: cmake_force
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marina/Developer/GitHub/library-catalogue-system/main.cpp -o CMakeFiles/cw2.dir/main.cpp.s
 
 CMakeFiles/cw2.dir/function.cpp.o: CMakeFiles/cw2.dir/flags.make
-CMakeFiles/cw2.dir/function.cpp.o: function.cpp
+CMakeFiles/cw2.dir/function.cpp.o: ../function.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cw2.dir/function.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw2.dir/function.cpp.o -c /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw2.dir/function.cpp.o -c /Users/marina/Developer/GitHub/library-catalogue-system/function.cpp
 
 CMakeFiles/cw2.dir/function.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw2.dir/function.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp > CMakeFiles/cw2.dir/function.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marina/Developer/GitHub/library-catalogue-system/function.cpp > CMakeFiles/cw2.dir/function.cpp.i
 
 CMakeFiles/cw2.dir/function.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw2.dir/function.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp -o CMakeFiles/cw2.dir/function.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marina/Developer/GitHub/library-catalogue-system/function.cpp -o CMakeFiles/cw2.dir/function.cpp.s
 
 # Object files for target cw2
 cw2_OBJECTS = \

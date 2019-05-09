@@ -81,7 +81,7 @@
 		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/class.h">
 			<Option target="cw2"/>
 		</Unit>
-		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/function.cpp">
+		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/function.cpp">
 			<Option target="cw2"/>
 		</Unit>
 		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp">
