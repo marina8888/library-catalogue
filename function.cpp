@@ -3,26 +3,43 @@
 //
 
 #include "class.h"
+#include <iostream>
 
-// Constructors - The default values are specified in the declaration
-Entry::Entry(string BorrowedBy, string BorrowedBy,) : BorrowedBy(none), name(none) year(none) { }
+//entry constructor, destructor
+Entry::Entry(){
+    cout<<"please input name of item:"<<endl;
+    cin>>name;
+    cout<<"please input year:"<<endl;
+    cin>>year;
+    cout<<"type 1 if it has been borrowed, 0 if not:"<<endl;
+    cin>>borrowed;
+    if(borrowed==1) {
+        cout << "please type name of borrower:" << endl;
+        cin >> BorrowedBy;
+    }
+        else {
+        BorrowedBy = "nobody";
+    }
+}
+Entry::Entry(string nam, int yea): name(nam), year(yea){};
+Entry::~Entry()=default;
 
-//Destructors
-Entry::~Entry();
+//entry setters and getters
+string Entry::entryReturned() const { return name; }
+void Entry::entryBorrowed (string nam) { name=nam; }
 
-// Getters
-int Entry::getEntry() const { return x; }
+//overiding derived class constructor
+Book::Book(string auth, string publi, string editi): Entry("hi", 20), author(auth), publisher(publi), edition(editi) {};
+Book::Book() {
+    cout << "Please input author, publisher:" << endl;
+    cin>>author>>publisher>>edition;
+}; //develop this for comma lists
 
-// Setters
-void Entry::setEntry(int x) { this->x = x; }
+void Book::printDetails(){
+    cout<<"name of item is:"<<name<<endl;
+    cout<<"year of item is:"<<year<<endl;
+    cout<<"author is:"<<author<<endl;
+    cout<<"publisher is:"<<publisher<<endl;
+    cout<<"editor is:"<<edition<<endl;
+};
 
-// Public Functions
-//setters and getters
-
-//things that do things
-entryBorrowed();
-entryReturned();
-printDetails();
-printDetails();//override
-printDetails();//override
-printDetails();//override

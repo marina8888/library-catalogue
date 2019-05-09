@@ -6,13 +6,13 @@
 #include <iostream>
 using namespace std;
 
-void m(int c){
-
-};
+//functionality- librarian creates new book
+//librarian
 
 int main(){
-  int marina;
 
+Book marina;
+Book marina2;
  return 0;
 }
 
