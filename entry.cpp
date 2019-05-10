@@ -1,8 +1,8 @@
 //
-// Created by Marina Kovaleva on 2019-04-01.
+// Created by Marina Kovaleva on 2019-05-10.
 //
 
-#include "function.h"
+#include "entry.h"
 #include <iostream>
 using namespace std;
 
@@ -10,10 +10,9 @@ using namespace std;
 Entry::Entry(){
     cout<<"Please input the item's name:"<<endl;
     cin>>name;
-assert (name=string);
+    assert(typeid(name)==typeid(string));
     cout<<"Please input year - Example. 2019:"<<endl;
     cin>>year;
-
     while ((borrowed != 0) and (borrowed != 1)) {
         cout << "Is the item borrowed: ['0', '1']:" << endl;
         cin >> borrowed;
@@ -37,16 +36,16 @@ assert (name=string);
 //    }
 
 //book functions
-inline Book::Book(){
+Book::Book(){
     cout<<"Please input the book's author:"<<endl;
     cin>>author;
     cout<<"Please input the book's publisher:"<<endl;
     cin>>publisher;
     cout<<"Please input the book's edition:"<<endl;
     cin>>edition;
-};
-inline Book::Book(string& author, string& publisher, string& edition)
-: author(author), publisher(publisher), edition(edition){
+}
+ inline Book::Book(string& author, string& publisher, string& edition)
+ : author(author), publisher(publisher), edition(edition){
 };
 void Book::printDetails() {
     cout<<"book name: "<<name<<endl;

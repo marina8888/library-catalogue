@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/marina/Developer/GitHub/library-catalogue-system/entry.cpp
+entry.h
+/Users/marina/Developer/GitHub/library-catalogue-system/entry.h
+iostream
+-
+
+/Users/marina/Developer/GitHub/library-catalogue-system/entry.h
+iostream
+-
+

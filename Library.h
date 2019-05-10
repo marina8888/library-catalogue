@@ -6,7 +6,7 @@
 #define MAIN_CPP_LIBRARY_H
 using namespace std;
 
-#include "class.h"
+#include "function.h"
 #include <map>
 
 class Library {
@@ -15,9 +15,9 @@ private:
 
 
 public:
-    Library();
-    void addBook( const string& id, Book& book );
-    void removeBook( const string& id );
+    Library(); //add
+    void addBook( const string& author, Book& name );
+    void removeBook( const string& author );
     void removeBook( Book& book );
 
     Book* findBook( const string& id );

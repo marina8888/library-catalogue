@@ -2,9 +2,10 @@
 // Created by Marina Kovaleva on 2019-04-01.
 //
 
-#include "class.h"
+#include "entry.h"
 #include <iostream>
 using namespace std;
+
 
 //functionality- librarian must be able to create new item
 //fix cin to get space seperated values?
@@ -18,7 +19,8 @@ using namespace std;
 
 int main(){
 
-Book marina;
+ Book marina;
+
 
  return 0;
 }
