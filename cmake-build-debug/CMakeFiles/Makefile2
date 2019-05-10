@@ -65,39 +65,39 @@ CMAKE_SOURCE_DIR = /Users/marina/Developer/GitHub/library-catalogue-system
 CMAKE_BINARY_DIR = /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/cw2.dir
+# Target rules for target CMakeFiles/cw1.dir
 
 # All Build rule for target.
-CMakeFiles/cw2.dir/all:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/depend
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target cw2"
-.PHONY : CMakeFiles/cw2.dir/all
+CMakeFiles/cw1.dir/all:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/depend
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target cw1"
+.PHONY : CMakeFiles/cw1.dir/all
 
 # Include target in all.
-all: CMakeFiles/cw2.dir/all
+all: CMakeFiles/cw1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cw2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cw2.dir/all
+CMakeFiles/cw1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cw1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/cw2.dir/rule
+.PHONY : CMakeFiles/cw1.dir/rule
 
 # Convenience name for target.
-cw2: CMakeFiles/cw2.dir/rule
+cw1: CMakeFiles/cw1.dir/rule
 
-.PHONY : cw2
-
-# clean rule for target.
-CMakeFiles/cw2.dir/clean:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/clean
-.PHONY : CMakeFiles/cw2.dir/clean
+.PHONY : cw1
 
 # clean rule for target.
-clean: CMakeFiles/cw2.dir/clean
+CMakeFiles/cw1.dir/clean:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/clean
+.PHONY : CMakeFiles/cw1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cw1.dir/clean
 
 .PHONY : clean
 

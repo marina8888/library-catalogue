@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cw2.dir/main.cpp.o"
-  "CMakeFiles/cw2.dir/function.cpp.o"
-  "CMakeFiles/cw2.dir/Library.cpp.o"
+  "CMakeFiles/cw2.dir/entry.cpp.o"
   "cw2.pdb"
   "cw2"
 )

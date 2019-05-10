@@ -111,71 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cw2
+# Target rules for targets named cw1
 
 # Build rule for target.
-cw2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cw2
-.PHONY : cw2
+cw1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cw1
+.PHONY : cw1
 
 # fast build rule for target.
-cw2/fast:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/build
-.PHONY : cw2/fast
+cw1/fast:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/build
+.PHONY : cw1/fast
 
-Library.o: Library.cpp.o
+entry.o: entry.cpp.o
 
-.PHONY : Library.o
-
-# target to build an object file
-Library.cpp.o:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.o
-.PHONY : Library.cpp.o
-
-Library.i: Library.cpp.i
-
-.PHONY : Library.i
-
-# target to preprocess a source file
-Library.cpp.i:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.i
-.PHONY : Library.cpp.i
-
-Library.s: Library.cpp.s
-
-.PHONY : Library.s
-
-# target to generate assembly for a file
-Library.cpp.s:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.s
-.PHONY : Library.cpp.s
-
-function.o: function.cpp.o
-
-.PHONY : function.o
+.PHONY : entry.o
 
 # target to build an object file
-function.cpp.o:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/function.cpp.o
-.PHONY : function.cpp.o
+entry.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/entry.cpp.o
+.PHONY : entry.cpp.o
 
-function.i: function.cpp.i
+entry.i: entry.cpp.i
 
-.PHONY : function.i
+.PHONY : entry.i
 
 # target to preprocess a source file
-function.cpp.i:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/function.cpp.i
-.PHONY : function.cpp.i
+entry.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/entry.cpp.i
+.PHONY : entry.cpp.i
 
-function.s: function.cpp.s
+entry.s: entry.cpp.s
 
-.PHONY : function.s
+.PHONY : entry.s
 
 # target to generate assembly for a file
-function.cpp.s:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/function.cpp.s
-.PHONY : function.cpp.s
+entry.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/entry.cpp.s
+.PHONY : entry.cpp.s
 
 main.o: main.cpp.o
 
@@ -183,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -201,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -212,13 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... cw2"
-	@echo "... Library.o"
-	@echo "... Library.i"
-	@echo "... Library.s"
-	@echo "... function.o"
-	@echo "... function.i"
-	@echo "... function.s"
+	@echo "... cw1"
+	@echo "... entry.o"
+	@echo "... entry.i"
+	@echo "... entry.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
