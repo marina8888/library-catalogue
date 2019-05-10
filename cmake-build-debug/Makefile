@@ -123,6 +123,33 @@ cw2/fast:
 	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/build
 .PHONY : cw2/fast
 
+Library.o: Library.cpp.o
+
+.PHONY : Library.o
+
+# target to build an object file
+Library.cpp.o:
+	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.o
+.PHONY : Library.cpp.o
+
+Library.i: Library.cpp.i
+
+.PHONY : Library.i
+
+# target to preprocess a source file
+Library.cpp.i:
+	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.i
+.PHONY : Library.cpp.i
+
+Library.s: Library.cpp.s
+
+.PHONY : Library.s
+
+# target to generate assembly for a file
+Library.cpp.s:
+	$(MAKE) -f CMakeFiles/cw2.dir/build.make CMakeFiles/cw2.dir/Library.cpp.s
+.PHONY : Library.cpp.s
+
 function.o: function.cpp.o
 
 .PHONY : function.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cw2"
+	@echo "... Library.o"
+	@echo "... Library.i"
+	@echo "... Library.s"
 	@echo "... function.o"
 	@echo "... function.i"
 	@echo "... function.s"

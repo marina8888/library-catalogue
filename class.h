@@ -18,9 +18,8 @@ protected:
     string year; //year of publication
 public:
     Entry();
-    Entry(string nam, int yea);
     virtual ~Entry(); //should it be virtual though?- is it needed?
-    void entryBorrowed (string nam);
+    void entryBorrowed (string& nam);
     string entryReturned () const ;
     virtual void printDetails()=0;
 };
@@ -31,7 +30,7 @@ private:
     string author, publisher, edition; //use structs? introduce pointers/references
 public:
     Book();
-    Book(const string auth, string publi, string editi);
+    Book( string& auth, string& publi, string& editi);
     void printDetails();
 };
 

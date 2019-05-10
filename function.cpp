@@ -21,15 +21,14 @@ Entry::Entry(){
         BorrowedBy = "nobody";
     }
 }
-Entry::Entry(string nam, int yea): name(nam), year(yea){};
 Entry::~Entry()=default;
 
 //entry setters and getters
 string Entry::entryReturned() const { return name; }
-void Entry::entryBorrowed (string nam) { name=nam; }
+void Entry::entryBorrowed (string& nam) { name=nam; }
 
 //overiding derived class constructor
-Book::Book(string auth, string publi, string editi): Entry("hi", 20), author(auth), publisher(publi), edition(editi) {};
+Book::Book(string& auth, string& publi, string& editi): Entry(), author(auth), publisher(publi), edition(editi) {};
 Book::Book() {
     cout << "Please input author, publisher:" << endl;
     cin>>author>>publisher>>edition;
