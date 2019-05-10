@@ -3,4 +3,5 @@ project(cw1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cw1 main.cpp entry.cpp entry.h)
+add_executable(cw1 main.cpp entry.cpp entry.h Library.h Library.cpp)
+

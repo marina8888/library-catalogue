@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/Library.cpp">
+			<Option target="cw1"/>
+		</Unit>
+		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/Library.h">
+			<Option target="cw1"/>
+		</Unit>
 		<Unit filename="/Users/marina/Developer/GitHub/library-catalogue-system/entry.cpp">
 			<Option target="cw1"/>
 		</Unit>

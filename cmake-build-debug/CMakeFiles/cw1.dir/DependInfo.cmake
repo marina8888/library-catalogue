@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/marina/Developer/GitHub/library-catalogue-system/Library.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw1.dir/Library.cpp.o"
   "/Users/marina/Developer/GitHub/library-catalogue-system/entry.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw1.dir/entry.cpp.o"
   "/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp" "/Users/marina/Developer/GitHub/library-catalogue-system/cmake-build-debug/CMakeFiles/cw1.dir/main.cpp.o"
   )

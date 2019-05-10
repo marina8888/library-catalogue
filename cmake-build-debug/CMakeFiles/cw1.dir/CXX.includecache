@@ -6,13 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/marina/Developer/GitHub/library-catalogue-system/entry.cpp
+/Users/marina/Developer/GitHub/library-catalogue-system/entry.h
+iostream
+-
+map
+-
+string
+-
+
+/Users/marina/Developer/GitHub/library-catalogue-system/main.cpp
 entry.h
 /Users/marina/Developer/GitHub/library-catalogue-system/entry.h
 iostream
 -
-
-/Users/marina/Developer/GitHub/library-catalogue-system/entry.h
-iostream
+map
+-
+string
 -
 

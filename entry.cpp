@@ -1,39 +1,78 @@
-//
-// Created by Marina Kovaleva on 2019-05-10.
-//
 
 #include "entry.h"
 #include <iostream>
+#include <stdio.h>
+#include <string>
+
 using namespace std;
 
-//entry constructor
+// Standard Entry Constructor
 Entry::Entry(){
     cout<<"Please input the item's name:"<<endl;
     cin>>name;
-    assert(typeid(name)==typeid(string));
-    cout<<"Please input year - Example. 2019:"<<endl;
-    cin>>year;
-    while ((borrowed != 0) and (borrowed != 1)) {
+    while (cout << "Please input a year: " && !(cin >> year)) { //discards non-int input
+        cin.clear();
+        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
+        cout << "Invalid input ";
+    }
+    while ((borrowed != 0) and (borrowed != 1)) { //accepts only 0 or 1 entries
         cout << "Is the item borrowed: ['0', '1']:" << endl;
         cin >> borrowed;
     } if(borrowed) {
         cout << "Please type name of borrower:" << endl;
         cin >> borrowedBy;
+    } else {
+        borrowedBy = "nobody"; //sets borrowedBy to nobody for borrow=0
     }
 }
-//Entry::Entry(string name, int year, int borrowed=0, string borrowedBy="nobody")
-//: name(name), year(year), borrowedBy(borrowedBy) {
-//    while ((borrowed != 0) and (borrowed != 1)) {
-//        cout << "Is the item borrowed: ['0', '1']:" << endl;
-//        cin >> borrowed;
-//    }
-//    if (borrowed) {
-//        cout << "Please type name of borrower:" << endl;
-//        cin >> borrowedBy;
-//    }
-//    else {
-//        borrowedBy = "nobody";
-//    }
+
+// Overloading Entry Constructor
+Entry::Entry(string &name, int year, int borrowed, string &borrowedBy)
+        : name(name), year(year), borrowed(borrowed), borrowedBy(borrowedBy) {
+    while ((borrowed != 0) and (borrowed != 1)) {
+        cout << "Is the item borrowed: ['0', '1']:" << endl;
+        cin >> borrowed;
+    }
+    if (borrowed) {
+        cout << "Please type name of borrower:" << endl;
+        cin >> borrowedBy;
+    } else {
+        borrowedBy = "nobody";
+    }
+}
+
+void Entry::entryBorrowed (string& name){
+    borrowed = 1;
+    borrowedBy = name;
+}
+
+void Entry::entryReturned() {
+    borrowed = 0;
+    borrowedBy = "nobody";
+}
+
+//adds entry to library
+void Library::addEntry(Entry &entry) {
+    catalogue.insert( pair<string, Entry>( entry.name, entry) );
+}
+//modifies an existing entry
+void Library::modifyEntry(Entry &entry) {
+    catalogue[entry.name] = entry;
+}
+//deletes entry
+void Library::deleteEntry(Entry &entry) {
+    catalogue.erase(entry.name);
+}
+//lists all entries in library
+void Library::listEntries() {
+    cout << endl << "Listing Library Entries:" << endl;
+    for (auto const &element : catalogue) {
+        cout << "name: " << element.first << ", year: " << element.second.year;
+        cout << ", borrowed: " << element.second.borrowed << ", borrowed by: " << element.second.borrowedBy << endl;
+    }
+    cout << "Listing complete" << endl << endl;
+}
+
 
 //book functions
 Book::Book(){
@@ -44,24 +83,28 @@ Book::Book(){
     cout<<"Please input the book's edition:"<<endl;
     cin>>edition;
 }
- inline Book::Book(string& author, string& publisher, string& edition)
+
+Book::Book(string &author, string &publisher, string &edition)
  : author(author), publisher(publisher), edition(edition){
 };
+
 void Book::printDetails() {
     cout<<"book name: "<<name<<endl;
-    cout<<"book year"<<year<<endl;
+    cout<<"book year: "<<year<<endl;
     cout<<"author: "<<author<<endl;
     cout<<"publisher: "<<publisher<<endl;
     cout<<"edition: "<<edition<<endl;
 };
+
+
 //music album functions
-inline MusicAlbum::MusicAlbum() {
+MusicAlbum::MusicAlbum() {
     cout<<"Please input the artist:"<<endl;
     cin>>artist;
     cout<<"Please input the record label:"<<endl;
     cin>>recordLabel;
 };
-inline MusicAlbum::MusicAlbum(string& artist, string& recordLabel)
+MusicAlbum::MusicAlbum(string &artist, string &recordLabel)
         : artist(artist), recordLabel(recordLabel){
 };
 void MusicAlbum::printDetails() {
@@ -70,14 +113,16 @@ void MusicAlbum::printDetails() {
     cout << "artist: " << artist << endl;
     cout << "record label: " << recordLabel << endl;
 }
+
+
 //film functions
-inline Film::Film() {
+Film::Film() {
     cout<<"Please input the film director: "<<endl;
     cin>>director;
     cout<<"Please input the film language: "<<endl;
     cin>>language;
 };
-inline Film::Film(string& director, string& language)
+Film::Film(string& director, string& language)
         : director(director), language(language){
 };
 void Film::printDetails() {
