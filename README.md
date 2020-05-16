@@ -14,4 +14,3 @@
 					
 5.	Write a C++ program, which will use the above classes. Use as many of the C++ and C++ Standard Library features as you can.		
 
-6.	Provide documentation for your program (limited to 4 pages including screen shots). Include a short description of the problem-solving phase and the implementation of your program, as well as an account of its limitations and possible improvements. In addition, as part of the documentation, provide evidence of testing. You must supply and explain the choice of values, which you used to test your program and the answers, which the program gave. You should also document any particular cases for which your program fails, or better add code to your program to make sure that they do not occur. 
