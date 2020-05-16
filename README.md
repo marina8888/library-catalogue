@@ -2,7 +2,7 @@
 
 ![alt-text](Diagram.png?raw=true "Diagram")
 
-# EN3085 Assessed Coursework 2
+# EN3085 Coursework
 
 You should solve the problems independently from other students and submit only your own work. Submit the programs and a short report explaining your solutions and demonstrating their correctness by 6pm, 10/05/19 through Learning Central.
 
@@ -31,4 +31,3 @@ A well commented program. The judicious use of commenting is essential if somebo
 •	A well documented program. Include a short description of the problem-solving phase and the implementation of your program, as well as an account of its limitations and possible improvements.
 •	A well tested program. You must supply and explain the choice of values, which you used to test your program and the answers, which the program gave. You should also document any particular cases for which your program fails, or better add code to your program to make sure that they do not occur.
 
-Dr Y Hicks
